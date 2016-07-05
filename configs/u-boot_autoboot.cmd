@@ -9,6 +9,7 @@
 setenv fdtaddr     "40800000"
 setenv initrdname  "uInitrd"
 setenv initrdaddr  "42000000"
+setenv mmcrootdev  "1"
 setenv loaddtb     "load mmc ${mmcbootdev}:${mmcbootpart} ${fdtaddr} ${fdtfile}"
 setenv loadinitrd  "load mmc ${mmcbootdev}:${mmcbootpart} ${initrdaddr} ${initrdname}"
 setenv loadkernel  "load mmc ${mmcbootdev}:${mmcbootpart} '${kerneladdr}' '${kernelname}'"
